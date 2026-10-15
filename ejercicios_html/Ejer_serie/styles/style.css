@@ -1,0 +1,67 @@
+/*  ------ VARIABLES CSS ------*/
+:root{
+    --color-primario: #9d4e44;
+    --color-secundario: #c77dff;
+    --color-claro: #e0aaff;
+    --color-oscuro: #1a0033;
+    --color-medio: #2d0052;
+    --color-fondo: #0d001a;
+    --sombra-neon: 0 0 15px var(--color-primario), 0 0 30px #7b2cbf;
+}
+
+/* ---------- RESET Y GENERAL ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, var(--color-oscuro) 0%, var(--color-medio) 50%, var(--color-fondo) 100%);
+    color: #f0e6ff;
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* ---------- CABECERA ---------- */
+header {
+    background: rgba(20,0, 40, 0.95);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 3px solid var(--color-primario);
+    box-shadow: var(--sombra-neon);
+    position: relative;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: var(--color-primario);
+    text-shadow: var(--sombra-neon);
+    letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.subtitulo{
+    font-size: 1.3rem;
+    color: var(--color-secundario);
+    font-style: italic;
+}
+
+.badge-netflix{
+    display: inline-block;
+    background-color: #e50914;
+    color: white;
+    padding: 0.4rem 1.2rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
