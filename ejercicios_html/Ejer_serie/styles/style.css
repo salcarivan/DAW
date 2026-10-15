@@ -193,14 +193,14 @@ h3 {
 }
 
 /* ---------- ARGUMENTO ---------- */
-#argumento {
+ #argumento {
     background: rgba(123, 44, 191, 0.15);
     border-radius: 2rem;
     margin-top: 4rem;
     border: 1px solid #7b2cbf;
 }
 
-#argumento p{
+#argumento p {
     font-size: 1.15rem;
     text-align: justify;
     margin-bottom: 1.5rem;
