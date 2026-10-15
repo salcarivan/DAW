@@ -65,3 +65,32 @@ h1{
     margin-top: 1rem;
     font-size: 0.9rem;
 }
+/* ---------- IMAGEN HERO ---------- */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1200') center/cover;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(26, 0, 51, 0.75);
+}
+
+.hero img {
+    max-width: 50rem;
+    width: 100%;
+    border: 5px solid var(--color-primario);
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 4rem rgba(157, 78, 221, 0.8);
+    position: relative;
+    z-index: 2;
+    transition: transform 0.4s;
+}
+
+.hero img:hover {
+    transform: scale(1.05) rotate(-1deg);
+}
