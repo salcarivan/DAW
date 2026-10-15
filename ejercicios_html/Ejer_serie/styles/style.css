@@ -191,3 +191,24 @@ h3 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
+
+/* ---------- ARGUMENTO ---------- */
+#argumento {
+    background: rgba(123, 44, 191, 0.15);
+    border-radius: 2rem;
+    margin-top: 4rem;
+    border: 1px solid #7b2cbf;
+}
+
+#argumento p{
+    font-size: 1.15rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    color: #f0e6ff;
+}
+
+#argumento p::first-letter {
+    font-size: 2rem;
+    color: var(--color-claro);
+    font-weight: bold;
+}
