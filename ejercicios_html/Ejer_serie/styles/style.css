@@ -29,6 +29,20 @@ body {
     overflow-x: hidden;
     position: relative;
 }
+/* ---------- FANTASMAS FLOTANTES ---------- */
+.fantasma-flotante {
+    position: fixed;
+    font-size: 2rem;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 1;
+    animation: flotar 15s infinite ease-in-out;
+}
+
+@keyframes flotar {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-8rem) rotate(10deg); }
+}
 
 /* ---------- CABECERA ---------- */
 header {
