@@ -424,3 +424,89 @@ table a:hover {
     margin-top: 0.8rem;
     font-size: 0.95rem;
 }
+
+/* ---------- CONTADOR ESPECTROS ---------- */
+.contador-espectros {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    background: rgba(36, 0, 70, 0.9);
+    padding: 1rem 1.8rem;
+    border-radius: 3rem;
+    border: 2px solid var(--color-primario);
+    color: var(--color-claro);
+    font-weight: bold;
+    z-index: 99;
+    box-shadow: 0 0 1.5rem rgba(157, 78, 221, 0.6);
+    font-size: 0.95rem;
+}
+
+/* ---------- BOTÓN VOLVER ARRIBA ---------- */
+#btnTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--color-primario);
+    color: white;
+    border: none;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 99;
+    box-shadow: 0 0.5rem 1.5rem rgba(157, 78, 221, 0.6);
+}
+
+#btnTop.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#btnTop:hover {
+    background: var(--color-secundario);
+    transform: translateY(-0.5rem);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background: var(--color-fondo);
+    text-align: center;
+    padding: 3rem;
+    margin-top: 5rem;
+    border-top: 3px solid var(--color-primario);
+    color: var(--color-secundario);
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    section { padding: 4rem 2rem; }
+
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    nav a {
+        display: none;
+        margin: 1rem 0.5rem;
+        font-size: 1rem;
+    }
+
+    nav.activo a {
+        display: inline-block;
+    }
+
+    .contador-espectros {
+        font-size: 0.8rem;
+        padding: 0.8rem 1.2rem;
+    }
+}
