@@ -281,3 +281,146 @@ h3 {
     transform: scale(1.05);
     box-shadow: 0 0.5rem 2rem rgba(199, 125, 255, 0.7);
 }
+
+/* ---------- ACTORES ---------- */
+#actores {
+    margin-top: 4rem;
+}
+
+.actores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.actor-card {
+    background: linear-gradient(145deg, #240046, #3c0963);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid #7b2cbf;
+    transition: all 0.4s;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.actor-card:hover {
+    transform: translateY(-1rem);
+    border-color: var(--color-claro);
+    box-shadow: 0 1.5rem 3rem rgba(157, 78, 221, 0.6);
+}
+
+.actor-card img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-secundario);
+    margin-bottom: 1.5rem;
+}
+
+.actor-card h4 {
+    color: var(--color-claro);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.actor-card p {
+    font-size: 0.95rem;
+    color: #d9c9f0;
+    text-align: justify;
+}
+
+.actor-card .personaje {
+    color: var(--color-secundario);
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+}
+
+.actor-card .bio-extra {
+    display: none;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--color-primario);
+    font-size: 0.9rem;
+    color: #e0aaff;
+}
+
+.actor-card.expandida .bio-extra {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ---------- FOTOGRAFÍAS (TABLA) ---------- */
+#fotografias {
+    margin-top: 4rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 1.5rem;
+    margin-top: 2rem;
+}
+
+table td {
+    background: rgba(36, 0, 70, 0.7);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 1.2rem;
+    border: 1px solid #7b2cbf;
+    vertical-align: top;
+    transition: all 0.3s;
+}
+
+table td:hover {
+    background: rgba(123, 44, 191, 0.3);
+    transform: scale(1.02);
+}
+
+table img {
+    width: 100%;
+    max-width: 32rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    border: 2px solid var(--color-primario);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+table img:hover {
+    box-shadow: 0 0 2rem var(--color-secundario);
+    transform: scale(1.03);
+}
+
+table a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--color-claro);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.6rem 1.4rem;
+    border: 1px solid var(--color-primario);
+    border-radius: 2rem;
+    transition: all 0.3s;
+}
+
+table a:hover {
+    background: var(--color-primario);
+    color: white;
+}
+
+.foto-caption {
+    color: var(--color-secundario);
+    font-style: italic;
+    margin-top: 0.8rem;
+    font-size: 0.95rem;
+}
