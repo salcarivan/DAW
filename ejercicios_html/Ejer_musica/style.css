@@ -1,0 +1,110 @@
+/* style.css */
+body {
+    background-color: #1a1a1a; /* Fondo de página */
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Fondo de tabla de navegación */
+nav table {
+    background-color: #333333;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Fondo de celda de navegación */
+nav td {
+    background-color: #444444;
+    border: 1px solid #555;
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #8b0000; /* Efecto hover */
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: #2a2a2a;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+}
+
+/* Estilos generales de tablas */
+table {
+    background-color: #333; /* Fondo de tabla */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    background-color: #3a3a3a; /* Fondo de celda */
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Fondo de fila alternada */
+tr:nth-child(even) {
+    background-color: #404040; 
+}
+
+aside {
+    background-color: #222;
+    border-left: 4px solid #8b0000;
+    padding: 15px;
+    margin: 20px;
+    font-style: italic;
+}
+
+footer {
+    background-color: #111;
+    color: #888;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 2px solid #8b0000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #8b0000;
+}
+
+/* Uso de span para resaltar texto */
+span {
+    color: #ff4444;
+    font-weight: bold;
+}
+
+/* Uso de div para agrupar contenido */
+div.contacto {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px dashed #666;
+}
