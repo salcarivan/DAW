@@ -10,5 +10,5 @@ print('Suma de las calificaciones de el primer estudiante y el ultimo', suma_cal
 # C) Calcular la nota media.
 num_notas=len(calificaciones)
 suma_notas=sum(calificaciones)
-nota_media=suma_notas/num_notas
+nota_media=round(suma_notas/num_notas, 2)
 print("Nota media:", nota_media)
