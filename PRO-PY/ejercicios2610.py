@@ -12,3 +12,13 @@ num_notas=len(calificaciones)
 suma_notas=sum(calificaciones)
 nota_media=round(suma_notas/num_notas, 2)
 print("Nota media:", nota_media)
+
+#Ejercicio 11 - 3/11
+equipo_a = ["Ana", "Luis"]
+equipo_b = ["Sofía", "Marcos"]
+
+gran_equipo = equipo_a + equipo_b
+print("Gran equipo:", gran_equipo)
+
+silencio = ["shh"] * 5
+print("Silencio:", silencio)
