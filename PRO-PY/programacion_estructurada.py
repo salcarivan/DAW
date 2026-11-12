@@ -424,10 +424,15 @@ def ejercicio_13() -> None:
     ]
     total: float = 0.0
     for i in range(len(empleados)):
-        nombre, apellidos, salario = empleados[i]
-        empleados[i] = (nombre, apellidos, salario * 1.10)
-        total += salario * 1.10
-    print(f'Salario total de la empresa: {total}')
+        nombre, apellidos, salario = empleados [i]
+        incremento: float= salario * 0.10
+        nuevo_salario:float = salario + incremento
+
+        empleados[i]= (nombre, apellidos, nuevo_salario)
+        total += nuevo_salario
+
+        print(f'{nombre} {apellidos}: +{incremento:.2f} € (Nuevo salario: {nuevo_salario:.2f} €)')
+    print(f'\nSalario total de la empresa: {total:.2f}')
 
 
 # -----------------------------------------------------------------------------
