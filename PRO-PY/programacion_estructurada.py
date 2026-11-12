@@ -667,5 +667,5 @@ if __name__ == '__main__':
     # ejercicio_16c()
     # ejercicio_16d()
     # ejercicio_17()
-    # ejercicio_18()
+    ejercicio_18()
     pass
