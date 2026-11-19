@@ -1,0 +1,374 @@
+/* ---------- VARIABLES CSS ---------- */
+:root {
+    --color-principal: #5c3a21;        /* Marrón café */
+    --color-secundario: #c89b6b;       /* Caramelo */
+    --color-acento: #8b2e2e;           /* Rojo vino */
+    --color-claro: #f5ead6;            /* Crema */
+    --color-texto: #3b2416;            /* Marrón oscuro */
+    --color-fondo: #fffaf2;            /* Blanco cálido */
+    --color-borde: #8b6b47;
+
+    --fuente-titulo: 'Georgia', 'Times New Roman', serif;
+    --fuente-parrafo: 'Verdana', 'Arial', sans-serif;
+
+    --tamano-titulo: 42pt;
+    --tamano-subtitulo: 22pt;
+    --tamano-texto: 12pt;
+}
+
+/* ---------- CUERPO GENERAL ---------- */
+body {
+    font-family: var(--fuente-parrafo);
+    font-size: var(--tamano-texto);
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    background-image: url('img/fondo.jpeg');
+    background-repeat: repeat;
+    background-position: center top;
+    background-size: 400px 400px;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+}
+
+/* ---------- CABECERA ---------- */
+header {
+    background-color: var(--color-principal);
+    color: var(--color-claro);
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: var(--color-secundario);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-family: var(--fuente-titulo);
+    font-size: var(--tamano-titulo);
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--color-claro);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+h2 {
+    font-family: var(--fuente-titulo);
+    font-size: var(--tamano-subtitulo);
+    font-weight: bold;
+    font-style: italic;
+    color: var(--color-principal);
+    text-align: center;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--color-secundario);
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-family: var(--fuente-titulo);
+    font-size: 16pt;
+    color: var(--color-acento);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* ---------- PÁRRAFOS ---------- */
+p {
+    font-family: var(--fuente-parrafo);
+    font-size: var(--tamano-texto);
+    text-align: justify;
+    line-height: 1.8em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px;
+}
+
+/* ---------- ENLACES Y NAVEGACIÓN ---------- */
+nav {
+    background-color: var(--color-secundario);
+    text-align: center;
+    padding: 12px;
+    border-top-style: dashed;
+    border-top-width: 2px;
+    border-top-color: var(--color-principal);
+    border-bottom-style: dashed;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--color-principal);
+}
+
+nav a {
+    font-family: var(--fuente-titulo);
+    font-size: 14pt;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-principal);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Estados del enlace */
+a:link {
+    color: var(--color-principal);
+}
+
+a:visited {
+    color: var(--color-acento);
+}
+
+a:hover {
+    color: var(--color-claro);
+    background-color: var(--color-principal);
+    text-decoration: underline;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--color-claro);
+}
+
+a:active {
+    color: #ffffff;
+    background-color: var(--color-acento);
+}
+
+/* ---------- CONTENEDOR PRINCIPAL ---------- */
+main {
+    background-color: rgba(255, 250, 242, 0.92);
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 900px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--color-borde);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(92, 58, 33, 0.3);
+}
+
+/* ---------- IMAGEN PRINCIPAL ---------- */
+.imagen-principal {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--color-secundario);
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 8px;
+}
+
+/* ---------- LISTAS ---------- */
+ul {
+    list-style-type: disc;
+    font-family: var(--fuente-parrafo);
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--color-claro);
+    border-style: dashed;
+    border-width: 1px;
+    border-color: var(--color-borde);
+    border-radius: 5px;
+}
+
+ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12pt;
+}
+
+ol {
+    list-style-type: upper-roman;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+ol li {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+/* ---------- PRODUCTOS DESTACADOS ---------- */
+.productos-destacados {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.producto {
+    text-align: center;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--color-claro);
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--color-borde);
+    border-radius: 8px;
+}
+
+.producto img {
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--color-principal);
+    display: block;
+    margin: 0 auto;
+}
+
+.producto p {
+    font-family: var(--fuente-titulo);
+    font-weight: bold;
+    font-size: 13pt;
+    color: var(--color-acento);
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* ---------- TABLAS ---------- */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: var(--color-fondo);
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--color-principal);
+}
+
+th {
+    background-color: var(--color-principal);
+    color: var(--color-claro);
+    font-family: var(--fuente-titulo);
+    font-size: 13pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--color-claro);
+    letter-spacing: 1px;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--color-secundario);
+    font-size: 11pt;
+}
+
+tr:nth-child(even) {
+    background-color: var(--color-claro);
+}
+
+.precio {
+    color: var(--color-acento);
+    font-weight: bold;
+    font-size: 13pt;
+    font-style: italic;
+}
+
+/* Imágenes dentro de la carta */
+img.producto-carta {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--color-secundario);
+    border-radius: 5px;
+}
+
+/* ---------- PIE DE PÁGINA ---------- */
+footer {
+    background-color: var(--color-principal);
+    color: var(--color-claro);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-top-color: var(--color-secundario);
+    font-size: 10pt;
+    letter-spacing: 1px;
+}
+
+footer p {
+    color: var(--color-claro);
+    text-align: center;
+    margin: 5px;
+}
+
+/* ---------- PÁGINA DE CONTACTO ---------- */
+.info-contacto {
+    background-color: var(--color-claro);
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--color-borde);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.info-contacto p {
+    font-size: 13pt;
+    margin: 8px 0;
+}
+
+.imagen-contacto {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border-style: solid;
+    border-width: 4px;
+    border-color: var(--color-principal);
+    border-radius: 8px;
+}
