@@ -372,3 +372,15 @@ footer p {
     border-color: var(--color-principal);
     border-radius: 8px;
 }
+/* Página carta*/
+  .titulo-carta {
+            color: #8b2e2e;
+            background-color: #f5ead6;
+            text-align: center;
+            padding: 15px;
+            border: 3px double #5c3a21;
+            font-size: 28pt;
+            font-family: 'Georgia', serif;
+            letter-spacing: 5px;
+            margin-bottom: 25px;
+        }
